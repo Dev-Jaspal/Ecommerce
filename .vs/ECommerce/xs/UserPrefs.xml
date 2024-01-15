@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="Multiple Projects">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Orders PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Customers PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Api.Orders/Models/Order.cs">
+    <Files>
+      <File FileName="ECommerce.Api.Customers/Models/Customer.cs" />
+      <File FileName="ECommerce.Api.Orders/Models/Order.cs" Line="16" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ECommerce" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{BACB0593-6423-4439-9C90-502803009D89}" ItemName="ECommerce.Api.Customers" ConfigurationId="http" />
+        <StartupItem ItemId="{209ECBFF-9E62-4895-A1D7-56811F33A4F0}" ItemName="ECommerce.Api.Orders" ConfigurationId="http" />
+        <StartupItem ItemId="{C3FB7023-360B-4491-B0BB-E1C830B403DB}" ItemName="ECommerce.Api.Products" ConfigurationId="http" />
+        <StartupItem ItemId="{C42FF43D-91BD-4786-8EE0-665DF1233414}" ItemName="ECommerce.Api.Products.Test" ConfigurationId="Default" />
+        <StartupItem ItemId="{5CAE4B2C-9845-4F13-9257-BBB23FF145C1}" ItemName="ECommerce.Api.Search" ConfigurationId="http" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Products PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Products.Test PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Search PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+</Properties>

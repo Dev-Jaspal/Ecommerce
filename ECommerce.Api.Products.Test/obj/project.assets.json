@@ -6675,11 +6675,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jaspalsingh/Projects/ECommerce/ECommerce.Api.Products.Test/ECommerce.Api.Products.Test.csproj",
+      "projectUniqueName": "/Users/jaspalsingh/Repository/Ecommerce/ECommerce.Api.Products.Test/ECommerce.Api.Products.Test.csproj",
       "projectName": "ECommerce.Api.Products.Test",
-      "projectPath": "/Users/jaspalsingh/Projects/ECommerce/ECommerce.Api.Products.Test/ECommerce.Api.Products.Test.csproj",
+      "projectPath": "/Users/jaspalsingh/Repository/Ecommerce/ECommerce.Api.Products.Test/ECommerce.Api.Products.Test.csproj",
       "packagesPath": "/Users/jaspalsingh/.nuget/packages/",
-      "outputPath": "/Users/jaspalsingh/Projects/ECommerce/ECommerce.Api.Products.Test/obj/",
+      "outputPath": "/Users/jaspalsingh/Repository/Ecommerce/ECommerce.Api.Products.Test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jaspalsingh/.nuget/NuGet/NuGet.Config"
@@ -6694,8 +6694,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/jaspalsingh/Projects/ECommerce/ECommerce.Api.Products/ECommerce.Api.Products.csproj": {
-              "projectPath": "/Users/jaspalsingh/Projects/ECommerce/ECommerce.Api.Products/ECommerce.Api.Products.csproj"
+            "/Users/jaspalsingh/Repository/Ecommerce/ECommerce.Api.Products/ECommerce.Api.Products.csproj": {
+              "projectPath": "/Users/jaspalsingh/Repository/Ecommerce/ECommerce.Api.Products/ECommerce.Api.Products.csproj"
             }
           }
         }
@@ -6751,7 +6751,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
       }
     }
   }

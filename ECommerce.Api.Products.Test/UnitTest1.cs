@@ -20,7 +20,8 @@ public class ProductsServiceTest
         var productsProvider = new ProductsProvider(dbContext,null,mapper);
         var products = await productsProvider.GetProductsAsync();
         Assert.True(products.IsSuccess);
-        Assert.True(products.Products.Any());
+        Assert.True(products.Products?.Any());
+
         Assert.Null(products.ErrorMessage);
     }
 

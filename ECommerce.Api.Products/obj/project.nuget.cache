@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FvNG9PppfPTmkIKZJEvN3vY7hAVVkSmFN0YF8WfO4jDW9l1ilfpR+H0WXZznahHk243P4pPxn7B8l9apc8ROQw==",
+  "dgSpecHash": "+KW4r7jc6cJyTuPbH0sq5ACdmTwgAd+l5ENm0jeolkZykF+KVky7GiDsHfzXZoXiJWkMlPpyL6NnM4zuiVbYSQ==",
   "success": true,
-  "projectFilePath": "/Users/jaspalsingh/Projects/ECommerce/ECommerce.Api.Products/ECommerce.Api.Products.csproj",
+  "projectFilePath": "/Users/jaspalsingh/Repository/Ecommerce/ECommerce.Api.Products/ECommerce.Api.Products.csproj",
   "expectedPackageFiles": [
     "/Users/jaspalsingh/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/jaspalsingh/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

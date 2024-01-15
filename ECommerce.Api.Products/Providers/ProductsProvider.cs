@@ -10,10 +10,10 @@ namespace ECommerce.Api.Products.Providers
 	public class ProductsProvider : IProductsProvider
 	{
         private readonly ProductsDbContext dbContext;
-        private readonly ILogger<ProductsProvider> logger;
+        private readonly ILogger<ProductsProvider>? logger;
         private readonly IMapper mapper;
 
-        public ProductsProvider(ProductsDbContext dbContext, ILogger<ProductsProvider> logger, IMapper mapper)
+        public ProductsProvider(ProductsDbContext dbContext, ILogger<ProductsProvider>? logger, IMapper mapper)
 		{
             this.dbContext = dbContext;
             this.logger = logger;
