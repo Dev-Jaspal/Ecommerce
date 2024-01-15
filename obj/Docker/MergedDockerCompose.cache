@@ -1,0 +1,18 @@
+name: dockercompose16891565412909109966
+services:
+  ecommerce.api.customers:
+    build:
+      context: /Users/jaspalsingh/Repository/Ecommerce
+      dockerfile: ECommerce.Api.Customers/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: ecommerceapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        protocol: tcp
+networks:
+  default:
+    name: dockercompose16891565412909109966_default

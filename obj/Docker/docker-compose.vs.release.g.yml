@@ -1,0 +1,90 @@
+version: '3.4'
+
+services:
+  ecommerce.api.customers:
+    container_name: ECommerce.Api.Customers
+    build:
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "ECommerce.Api.Customers"
+    volumes:
+      - /Users/jaspalsingh/vsdbg/vs2017u5:/remote_debugger:rw
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/ECommerce.Api.Customers.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "ECommerce.Api.Customers"
+    tty: true
+  ecommerce.api.orders:
+    container_name: ECommerce.Api.Orders
+    build:
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "ECommerce.Api.Orders"
+    volumes:
+      - /Users/jaspalsingh/vsdbg/vs2017u5:/remote_debugger:rw
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/ECommerce.Api.Orders.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "ECommerce.Api.Orders"
+    tty: true
+
+  ecommerce.api.products:
+    container_name: ECommerce.Api.Products
+    build:
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "ECommerce.Api.Products"
+    volumes:
+      - /Users/jaspalsingh/vsdbg/vs2017u5:/remote_debugger:rw
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/ECommerce.Api.Products.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "ECommerce.Api.Products"
+    tty: true
+
+  ecommerce.api.products.test:
+    container_name: ECommerce.Api.Products.Test
+    build:
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "ECommerce.Api.Products.Test"
+    volumes:
+      - /Users/jaspalsingh/vsdbg/vs2017u5:/remote_debugger:rw
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/ECommerce.Api.Products.Test.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "ECommerce.Api.Products.Test"
+    tty: true
+
+  ecommerce.api.search:
+    container_name: ECommerce.Api.Search
+    build:
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "ECommerce.Api.Search"
+    volumes:
+      - /Users/jaspalsingh/vsdbg/vs2017u5:/remote_debugger:rw
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages  \"/app/ECommerce.Api.Search.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+      com.microsoft.visual-studio.project-name: "ECommerce.Api.Search"
+    tty: true

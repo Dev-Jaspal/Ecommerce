@@ -1,0 +1,267 @@
+name: dockercompose16891565412909109966
+services:
+  ecommerce.api.customers:
+    build:
+      context: /Users/jaspalsingh/Repository/Ecommerce
+      dockerfile: ECommerce.Api.Customers/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ECommerce.Api.Customers
+      target: base
+    container_name: ECommerce.Api.Customers
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: ""
+    image: ecommerceapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net7.0/ECommerce.Api.Customers.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "6002"
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: /Users/jaspalsingh/Repository/Ecommerce/ECommerce.Api.Customers
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/Repository/Ecommerce
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/vsdbg/vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/.nuget/packages/
+        target: /root/.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+  ecommerce.api.orders:
+    build:
+      context: /Users/jaspalsingh/Repository/Ecommerce
+      dockerfile: ECommerce.Api.Orders/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ECommerce.Api.Orders
+      target: base
+    container_name: ECommerce.Api.Orders
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: ""
+    image: ecommerceapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net7.0/ECommerce.Api.Orders.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "6003"
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: /Users/jaspalsingh/Repository/Ecommerce/ECommerce.Api.Orders
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/Repository/Ecommerce
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/vsdbg/vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/.nuget/packages/
+        target: /root/.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+  ecommerce.api.products:
+    build:
+      context: /Users/jaspalsingh/Repository/Ecommerce
+      dockerfile: ECommerce.Api.Products/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ECommerce.Api.Products
+      target: base
+    container_name: ECommerce.Api.Products
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: ""
+    image: ecommerceapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net7.0/ECommerce.Api.Products.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "6001"
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: /Users/jaspalsingh/Repository/Ecommerce/ECommerce.Api.Products
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/Repository/Ecommerce
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/vsdbg/vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/.nuget/packages/
+        target: /root/.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+  ecommerce.api.products.test:
+    build:
+      context: /Users/jaspalsingh/Repository/Ecommerce
+      dockerfile: ECommerce.Api.Products.Test/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ECommerce.Api.Products.Test
+      target: base
+    container_name: ECommerce.Api.Products.Test
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      NUGET_FALLBACK_PACKAGES: ""
+    image: ecommerceapiproducts:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net7.0/ECommerce.Api.Products.Test.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    tty: true
+    volumes:
+      - type: bind
+        source: /Users/jaspalsingh/Repository/Ecommerce/ECommerce.Api.Products.Test
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/Repository/Ecommerce
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/vsdbg/vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/.nuget/packages/
+        target: /root/.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+  ecommerce.api.search:
+    build:
+      context: /Users/jaspalsingh/Repository/Ecommerce
+      dockerfile: ECommerce.Api.Search/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ECommerce.Api.Search
+      target: base
+    container_name: ECommerce.Api.Search
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: ""
+    image: ecommerceapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net7.0/ECommerce.Api.Search.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "6004"
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: /Users/jaspalsingh/Repository/Ecommerce/ECommerce.Api.Search
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/Repository/Ecommerce
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/vsdbg/vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /Users/jaspalsingh/.nuget/packages/
+        target: /root/.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: dockercompose16891565412909109966_default
