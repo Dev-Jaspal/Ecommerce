@@ -82,7 +82,6 @@ services:
     image: ecommerceapiproducts:dev
     container_name: ECommerce.Api.Products.Test
     build:
-      target: base
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "ECommerce.Api.Products.Test"
