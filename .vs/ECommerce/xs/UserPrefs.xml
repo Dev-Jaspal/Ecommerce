@@ -1,4 +1,13 @@
 ﻿<Properties StartupConfiguration="{8C6B89E0-CDA8-4860-A11A-5B6A490B560A}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Products.Test PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Customers PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
       <Items>
@@ -6,37 +15,30 @@
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
-  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Search PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Products PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Products.Test PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Orders PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <Debugger.DebugSourceFolders />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Api.Customers/Dockerfile">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerce.Api.Search/Dockerfile">
     <Files>
-      <File FileName="docker-compose.yml" Line="5" Column="10" />
-      <File FileName="docker-compose.override.yml" Line="28" Column="59" />
+      <File FileName="docker-compose.yml" Line="33" Column="11" />
+      <File FileName="docker-compose.override.yml" Line="33" Column="1" />
       <File FileName="ECommerce.Api.Customers/Dockerfile" Line="14" Column="1" />
+      <File FileName="ECommerce.Api.Products.Test/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="ECommerce.Api.Search/Dockerfile" Line="1" Column="1" />
+      <File FileName="ECommerce.Api.Products.Test/Dockerfile" Line="1" Column="1" />
+      <File FileName="ECommerce.Api.Search/appsettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ECommerce" expanded="True" selected="True">
-            <Node name="docker-compose" expanded="True">
-              <Node name="docker-compose.yml" expanded="True" />
-            </Node>
-            <Node name="ECommerce.Api.Customers" expanded="True">
-              <Node name="Models" expanded="True" />
+          <Node name="ECommerce">
+            <Node name="ECommerce.Api.Search" expanded="True">
+              <Node name="Services" expanded="True" />
+              <Node name="Dockerfile" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Customers PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ECommerce.Api.Search PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
 </Properties>
